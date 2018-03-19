@@ -1,0 +1,3 @@
+# docker pull alpine
+# to get the Alpine Docker image
+docker run -it --rm alpine /bin/sh

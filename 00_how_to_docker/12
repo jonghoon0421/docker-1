@@ -1,0 +1,5 @@
+# docker pull mysql/mysql-server
+# to get the MySQL Docker image
+docker run -d --restart on-failure --name spawning-pool	\
+		   -e MYSQL_ROOT_PASS="Kerrigan" mysql			\
+		   more

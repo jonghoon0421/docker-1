@@ -1,0 +1,4 @@
+docker-machine env Char
+# shows the four environment variables needed
+eval $(docker-machine env Char)
+# connects the shell to the new machine
