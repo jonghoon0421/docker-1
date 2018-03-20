@@ -1,0 +1,6 @@
+# docker pull wordpress
+# to get the WordPress Docker image
+docker run -d									\
+		   --name lair							\
+		   -p 8080:80							\
+		   --link lair-mysql
