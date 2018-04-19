@@ -1,0 +1,4 @@
+#!/bin/sh
+VAR=`docker swarm join-token worker`
+RVAR=`echo "$VAR" | sed 's/^[[:blank:]]*//;s/[[:blank:]]*$//' | sed '/^$/d' | grep -v "command"`
+docker-machine ssh Aiur `echo $RVAR`

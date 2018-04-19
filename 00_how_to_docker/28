@@ -1,0 +1,9 @@
+# docker pull 42school/marine-squad
+# to get the Docker image
+docker service create -d							\
+		   --replicas 2								\
+		   -e OC_USERNAME=Bunny						\
+		   -e OC_PASSWD=carrot						\
+		   --name marines							\
+		   --network overmind						\
+		   42school/marine-squad

@@ -1,0 +1,2 @@
+docker service logs -f engineering-bay | grep bay.1
+# OR "docker service logs -f engineering-bay | grep bay.2"

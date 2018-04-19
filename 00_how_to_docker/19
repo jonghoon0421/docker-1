@@ -1,6 +1,6 @@
 # docker pull python:2-slim
 # to get the Python 2-slim version Docker image
-docker-machine ssh Char mkdir /home/flask
+docker-machine ssh Char mkdir -p /home/flask
 docker-machine scp hello.py Char:/home/flask/pycopy.py
 docker run -d									\
 		   -t --name Abathur					\
@@ -8,4 +8,4 @@ docker run -d									\
 		   -w /root								\
 		   -p 3000:3000							\
 		   -e FLASK_APP=pycopy.py python:2-slim
-docker exec Abathur bash -c 'pip install Flask && apt-get update -y && apt-get upgrade -y && flask run --host=0.0.0.0 --port=3000'
+docker exec Abathur bash -c 'pip install Flask && flask run --host=0.0.0.0 --port=3000'
