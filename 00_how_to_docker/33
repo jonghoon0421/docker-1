@@ -1,1 +1,2 @@
-docker 
+# make sure that the active machine is "Char"
+docker rmi $(docker images -aq)
