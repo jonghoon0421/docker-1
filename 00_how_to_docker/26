@@ -1,9 +1,9 @@
 # docker pull 42school/engineering-bay
 # to get the Docker image
-docker service create -d							\
-		   --replicas 2								\
-		   --name engineering-bay					\
-		   --network overmind						\
-		   -e OC_USERNAME=Bunny						\
-		   -e OC_PASSWD=carrot						\
+docker service create -d \
+		   --replicas 2 \
+		   --name engineering-bay \
+		   --network overmind \
+		   -e OC_USERNAME=Bunny \
+		   -e OC_PASSWD=carrot \
 		   42school/engineering-bay

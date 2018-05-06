@@ -1,9 +1,9 @@
 # docker pull wordpress
 # to get the WordPress Docker image
-docker run -d									\
-		   --name lair							\
-		   -p 8080:80							\
-		   --link spawning-pool:mysql			\
+docker run -d \
+		   --name lair \
+		   -p 8080:80 \
+		   --link spawning-pool:mysql \
 		   wordpress
 # not sure if WORDPRESS_DB_PASSWORD && WORDPRESS_DB_NAME have to be set the same
 # as MYSQL_*

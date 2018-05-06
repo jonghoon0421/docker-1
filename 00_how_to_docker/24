@@ -1,8 +1,8 @@
 # docker pull rabbitmq
 # to get the RabbitMQ Docker image
-docker service create -d								\
-		   --name orbital-command						\
-		   --network overmind							\
-		   -e RABBITMQ_DEFAULT_USER=Bunny				\
-		   -e RABBITMQ_DEFAULT_PASS=carrot				\
+docker service create -d \
+		   --name orbital-command \
+		   --network overmind \
+		   -e RABBITMQ_DEFAULT_USER=Bunny \
+		   -e RABBITMQ_DEFAULT_PASS=carrot \
 		   rabbitmq
