@@ -13,4 +13,4 @@ WORKDIR /teamspeak3-server_linux_amd64
 ENTRYPOINT ["./ts3server_minimal_runscript.sh"]
 
 # docker build -t ts3server .
-# docker run -it --name teamspeak3 ts3server
+# docker run -it -p 9987:9987/udp 10011:10011 30033:30033 ts3server

@@ -1,8 +1,8 @@
-# docker pull mysql
+# docker pull mysql:5.7
 # to get the MySQL Docker image
 docker run -d \
 		   --restart on-failure \
 		   --name spawning-pool \
 		   -e MYSQL_ROOT_PASSWORD=Kerrigan \
 		   -e MYSQL_DATABASE=zerglings \
-		   -v hatchery:/var/lib/mysql mysql
+		   -v hatchery:/var/lib/mysql mysql:5.7
